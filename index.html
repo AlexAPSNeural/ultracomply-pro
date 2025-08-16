@@ -1,142 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UltraComply Pro - Enterprise AI Compliance Management</title>
+    <title>UltraComply Pro - AI Compliance Management</title>
     <style>
-        body, html {
+        body {
             margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
         }
+
         header {
-            background-color: #23395d;
+            background: #4A6CF7;
             color: #fff;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
+
+        header h1 {
             margin: 0;
             font-size: 2.5em;
         }
-        nav {
-            background-color: #1f2d3d;
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.25em;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .hero {
-            background-color: #f4f4f4;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .hero h2 {
-            font-size: 2em;
-            margin: 20px 0;
-        }
-        .hero p {
-            font-size: 1.2em;
-            color: #444;
-            max-width: 600px;
+
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 40px 0;
-            background-color: #fff;
-        }
-        .feature {
-            width: 30%;
-            margin: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        .feature h3 {
-            color: #23395d;
-        }
-        .feature p {
-            color: #666;
-        }
+
         .cta {
-            background-color: #23395d;
-            color: #fff;
+            background: #55BCF6;
             text-align: center;
-            padding: 40px 20px;
+            padding: 40px 0;
         }
+
+        .cta h2 {
+            font-size: 2em;
+            color: #fff;
+        }
+
         .cta a {
             display: inline-block;
-            padding: 15px 30px;
             margin-top: 20px;
-            color: #fff;
-            background-color: #1f78b4;
+            padding: 10px 30px;
+            background: #fff;
+            color: #333;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+            transition: background 0.3s ease;
         }
-        footer {
-            background-color: #1f2d3d;
+
+        .cta a:hover {
+            background: #E9EEF9;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .feature p {
+            font-size: 1em;
+        }
+
+        .footer {
+            background: #333;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 20px 0;
         }
-        @media(max-width: 768px) {
+
+        .footer p {
+            margin: 0;
+        }
+
+         @media(max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .cta h2 {
+                font-size: 1.75em;
+            }
+
+            .feature h3 {
+                font-size: 1.25em;
+            }
+
+            .features {
+                flex-direction: column;
+            }
+
             .feature {
-                width: 80%;
+                margin: 10px 0;
             }
         }
     </style>
 </head>
+
 <body>
-    <header>
+    <header class="container">
         <h1>UltraComply Pro</h1>
+        <p>Enterprise-grade AI Compliance Management Platform</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About Us</a></li>
-        </ul>
-    </nav>
-    <section class="hero">
-        <h2>AI Compliance Management Made Easy</h2>
-        <p>Automate your compliance processes and ensure regulatory adherence across global markets with our enterprise-grade platform.</p>
+
+    <section class="container cta">
+        <h2>Effortlessly Ensure Regulatory Adherence Globally</h2>
+        <a href="#features">Discover More</a>
     </section>
-    <section class="features" id="features">
+
+    <section class="container features">
         <div class="feature">
             <h3>Global Compliance</h3>
-            <p>Stay ahead of regulations across multiple jurisdictions seamlessly.</p>
+            <p>Keep up with dynamic regulations across global markets with ease.</p>
         </div>
         <div class="feature">
-            <h3>AI-Driven Insights</h3>
-            <p>Utilize powerful AI analytics to stay compliant and informed.</p>
+            <h3>AI-Powered Insights</h3>
+            <p>Get ahead of compliance challenges with real-time AI insights.</p>
         </div>
         <div class="feature">
-            <h3>Risk Management</h3>
-            <p>Identify and mitigate compliance risks proactively.</p>
+            <h3>Automated Processes</h3>
+            <p>Streamline compliance management with end-to-end automation.</p>
         </div>
     </section>
-    <section class="cta" id="contact">
-        <h2>Get Started Today</h2>
-        <p>Contact us for a demo and see how UltraComply Pro can revolutionize your compliance management.</p>
-        <a href="mailto:info@ultracomplypro.com">Contact Us</a>
-    </section>
-    <footer id="about">
-        <p>© 2023 UltraComply Pro. All Rights Reserved.</p>
+
+    <footer class="footer">
+        <p>&copy; 2023 UltraComply Pro. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
